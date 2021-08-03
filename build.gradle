@@ -51,7 +51,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.schneide.sescl.Application")
+    mainClass.set("de.miq.demo.Application")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("11")
