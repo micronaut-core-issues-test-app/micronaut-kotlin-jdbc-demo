@@ -25,6 +25,6 @@ class ComponentController {
         if (!component.isPresent) {
             return HttpResponse.notFound()
         }
-        return SimpleHttpResponseFactory().status<String>(HttpStatus.OK, component.get().uuid).contentType(MediaType.TEXT_PLAIN)
+        return HttpResponse.ok(component.get().id)
     }
 }
