@@ -13,7 +13,7 @@ abstract class ComponentRepository(private val jdbcOperations: JdbcOperations): 
 
     @Transactional
     fun componentById(uuid: String): Optional<Component> {
-        val sql = "select * from component where id = ?"
+        val sql = "select * from component where foo = ?"
         return jdbcOperations.prepareStatement(sql) { statement ->
             statement.setString(1, uuid)
             val resultSet = statement.executeQuery()
