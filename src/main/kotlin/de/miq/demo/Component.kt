@@ -4,4 +4,4 @@ import io.micronaut.data.annotation.MappedEntity
 import javax.persistence.Id
 
 @MappedEntity
-data class Component(@Id var uuid: String = "")
+data class Component(@Id var id: String = "")
